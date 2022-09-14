@@ -1,0 +1,33 @@
+package qwerty;
+
+public class Ball {
+    String firma;
+    int radius;
+
+    public Ball(String firma, int radius) {
+        this.firma = firma;
+        this.radius = radius;
+    }
+
+    public String getfirma() {
+        return firma;
+    }
+
+    public void setfirma(String firma) {
+        this.firma = firma;
+    }
+
+    public int getradius() {
+        return radius;
+    }
+
+    public void setradius(int radius) {
+        this.radius = radius;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Dog{" + "firma= " +firma + '\'' + ", radius=" +radius + '}';
+    }
+}
