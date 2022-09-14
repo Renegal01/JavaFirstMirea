@@ -1,0 +1,35 @@
+package qwerty;
+
+public class Book {
+    String avtor;
+    int razmer;
+
+    public Book(String avtor, int razmer)
+    {
+        this.avtor = avtor;
+        this.razmer = razmer;
+    }
+
+    public String getavtor()
+    {
+        return avtor;
+    }
+
+    public void setavtor(String avtor) {
+        this.avtor=avtor;
+    }
+
+    public int getrazmer() {
+        return razmer;
+    }
+
+    public void setrazmer(int razmer) {
+        this.razmer = razmer;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Kniga{" + "avtor= " +avtor + '\'' + ", razmer=" +razmer + '}';
+    }
+}
