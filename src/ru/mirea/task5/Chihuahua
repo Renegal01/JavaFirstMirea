@@ -1,0 +1,12 @@
+package qwerty;
+public class Chihuahua extends Dog{
+    private String color;
+    public Chihuahua(String nov, String mat){
+        super(nov, mat);
+    }
+    public static void main(String[] args) {
+        Dolmotinec posuda = new Dolmotinec("Редкая", "Оранжевая");
+        System.out.println("Собака породистая?" + posuda.isporodyastaya() );
+        System.out.println("A цвета какого?" + posuda.getraskraska());
+    }
+}
