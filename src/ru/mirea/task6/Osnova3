@@ -1,0 +1,12 @@
+package qwerty;
+import java.util.Scanner;
+public class Osnova3
+{
+    public static void main (String args [])
+    {
+        Scanner in = new Scanner(System.in);
+        String Name;
+        Name = in.nextLine();
+        Nameable per3 = new NameableClass (Name);
+    }
+}
