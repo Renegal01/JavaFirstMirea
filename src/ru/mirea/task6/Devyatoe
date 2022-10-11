@@ -1,0 +1,26 @@
+package qwerty;
+import java.util.Arrays;
+import java.util.Scanner;
+class Devyatoe implements Printable
+{
+   public  String[] myArray  = new String[] {"Winter", "Spring", "Summer", "Autumn"};
+    public Devyatoe()
+    {
+        print();
+    }
+    public void print ()
+    {
+        System.out.println(toString());
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Devyatoe{" + "myArray=" + Arrays.toString(myArray) + '}'+"\n";
+    }
+
+    public static void main(String[] args)
+    {
+Devyatoe per9 = new Devyatoe();
+    }
+}
