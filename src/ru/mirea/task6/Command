@@ -1,0 +1,6 @@
+package zadanie12;
+
+interface Command {
+    void execute();
+    void unexecute();
+}
