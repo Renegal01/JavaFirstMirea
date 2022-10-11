@@ -1,0 +1,10 @@
+package zadanie10;
+
+public class Shop
+{
+void dobavit()
+{
+
+}
+
+}
