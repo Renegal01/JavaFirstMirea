@@ -1,0 +1,6 @@
+package qwerty;
+
+public interface Priceable
+{
+    void getPrice();
+}
