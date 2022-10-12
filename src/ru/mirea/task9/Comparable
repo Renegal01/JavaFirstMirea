@@ -1,0 +1,6 @@
+package practica7;
+
+public interface Comparable<T>
+{
+    public int compareTo(T o);
+}
