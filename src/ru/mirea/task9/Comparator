@@ -1,0 +1,6 @@
+package practica7;
+
+public interface Comparator
+{
+   void sortik();
+}
