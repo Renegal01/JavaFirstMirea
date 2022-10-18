@@ -1,0 +1,51 @@
+package package7;
+class MoveableRectangle implements Moveable
+{
+    public int x,y,xSpeed,ySpeed;
+    String A;
+    String perevod(int k)
+    {
+        A = Integer. toString(k);
+        return A;
+    }
+    int SpeedTest(int topLeft,int bottomRight,int xSpeed,int ySpeed)
+    {
+        if(topLeft+xSpeed==bottomRight+xSpeed && topLeft+ySpeed==bottomRight+ySpeed)return 1;
+        else return -1;
+    }
+    public MoveableRectangle(int x, int y, int xSpeed, int ySpeed)
+    {
+        this.x = x;
+        this.y = y;
+        this.xSpeed = xSpeed;
+        this.ySpeed = ySpeed;
+    }
+
+    @Override
+    public void moveup()
+    {
+    y+=ySpeed;
+    }
+
+    @Override
+    public void movedown()
+    {
+     y=y-ySpeed;
+    }
+
+    @Override
+    public void moveleft()
+    {
+    x=x-xSpeed;
+    }
+
+    @Override
+    public void moveright() {
+        x+=xSpeed;
+    }
+
+    public static void main(String[] args)
+    {
+
+    }
+}
