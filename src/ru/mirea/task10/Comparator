@@ -1,0 +1,6 @@
+package package10;
+public interface Comparator<E>
+{
+void sortsrbal();
+void sortkurs();
+}
