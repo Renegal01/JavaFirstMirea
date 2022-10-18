@@ -1,0 +1,8 @@
+package package7;
+
+public interface MathCalculable
+{
+    public static double Pi=3.14;
+    void stepen(int a,int b);
+    void modul(int a);
+}
