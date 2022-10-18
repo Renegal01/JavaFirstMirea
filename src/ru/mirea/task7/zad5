@@ -1,0 +1,7 @@
+package package7;
+
+public interface zad5 {
+    void schet(String S);
+    void nechet(String S);
+    void invert(String S);
+}
