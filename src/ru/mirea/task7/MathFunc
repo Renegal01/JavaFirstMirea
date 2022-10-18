@@ -1,0 +1,37 @@
+package package7;
+import java.util.Scanner;
+class MathFunc implements MathCalculable
+{
+   static public void dlinaokr(double radius)
+    {
+        double C;
+        C=2*Pi*radius;
+    System.out.println("Длина окружности: "+C);
+    }
+    @Override
+    public void stepen(int a,int i)
+    {
+        for(int g=1;g<i;g++)
+            a*=a;
+        System.out.println(a);
+    }
+    @Override
+    public void modul(int a)
+    {
+        if(a<0)a=a*-1;
+        System.out.println(a);
+    }
+    public static void main(String[] args)
+    {
+        double radius;
+        int a, b;
+        Scanner in = new Scanner(System.in);
+        MathCalculable mc1 = new MathFunc();
+        radius = in.nextDouble();
+        a = in.nextInt();
+        b = in.nextInt();
+        dlinaokr(radius);
+        mc1.modul(a);
+        mc1.stepen(a,b);
+    }
+}
