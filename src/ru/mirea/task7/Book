@@ -1,0 +1,19 @@
+package zadanie8;
+public class Book implements Printable
+{
+    String name;
+    Book(String name)
+    {
+        this.name=name;
+    }
+    @Override
+    public Printable print()
+    {
+        System.out.println("Это книга! "+name);
+        return null;
+    }
+    public void printBooks(Printable[] printable){
+        Printable b=print();
+        System.out.println(b);
+    }
+}
