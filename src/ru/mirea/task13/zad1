@@ -1,0 +1,32 @@
+package Rabota13;
+import java.util.Scanner;
+public class zad1
+{
+    public static void metod(String str)
+    {
+String example=str;
+char result1 = str.charAt(str.length()-1);
+boolean result2 = str.endsWith("!!!");
+boolean result3 = str.startsWith("I like");
+boolean result4 = str.contains("Java");
+int index1=str.indexOf("Java");
+int index2=index1+3;
+System.out.println("Ответ на 1 задание: "+result1);
+System.out.println("Ответ на 2 задание: "+result2);
+System.out.println("Ответ на 3 задание: "+result3);
+System.out.println("Ответ на 4 задание: "+result4);
+System.out.println("Ответ на 5 задание: "+index1+" "+index2 );
+System.out.println("Ответ на 6 задание: "+example.replace('o', 'a'));
+System.out.println("Ответ на 7 задание: "+str.toUpperCase());
+System.out.println("Ответ на 8 задание: "+str.toLowerCase());
+System.out.println("Ответ на 9 задание: "+example.substring(0,7)+example.substring(11));
+    }
+    public static void main(String[] args)
+    {
+        String str;
+        Scanner in = new Scanner(System.in);
+       //str=in.nextLine();
+       str="I like Java!!!";
+       metod(str);
+    }
+}
