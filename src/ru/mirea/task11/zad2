@@ -1,0 +1,24 @@
+package Rabota11;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Scanner;
+public class zad2
+{
+    public static void main(String[] args)
+    {
+        zad22();
+    }
+    static void zad22()
+    {
+        Scanner in = new Scanner(System.in);
+        Calendar cal1 = Calendar.getInstance();
+        int day = cal1.get(Calendar.DAY_OF_MONTH);
+        System.out.print("Введите День:");
+        int dayvved  = in.nextInt();
+                if(cal1.get(Calendar.DAY_OF_MONTH)==dayvved)
+                            System.out.println("Даты совпадают!");
+        else
+                            System.out.println("Даты не совпадают!");
+    }
+}
