@@ -1,0 +1,91 @@
+package Rabota13;
+
+import java.util.StringTokenizer;
+
+public class Addres {
+    public String Country;
+    public String Region;
+    public String City;
+    public String Street;
+    public String House;
+    public String Korpus;
+    public String Kvartira;
+
+    public String getCountry() {
+        return Country;
+    }
+
+    public String getRegion() {
+        return Region;
+    }
+
+    public String getCity() {
+        return City;
+    }
+
+    public String getStreet() {
+        return Street;
+    }
+
+    public String getHouse() {
+        return House;
+    }
+
+    public String getKorpus() {
+        return Korpus;
+    }
+
+    public String getKvartira() {
+        return Kvartira;
+    }
+
+    //Страна[d] Регион[d] Город[d] Улица[d] Дом[d] Корпус[d]Квартира”
+    public static void main(String[] args)
+    {
+        Addres ms1 = new Addres();
+        int o=0;
+        String str = "Страна,Регион,Город,Улица,Дом,Корпус,Квартира";
+        String[] words = str.split(",");
+        for (String word : words) {
+            if(o==0)ms1.Country=word;
+            if(o==1)ms1.Region=word;
+            if(o==2)ms1.City=word;
+            if(o==3)ms1.Street=word;
+            if(o==4)ms1.House=word;
+            if(o==5)ms1.Korpus=word;
+            if(o==6)ms1.Kvartira=word;
+            o++;
+        }
+        System.out.println("Страна: "+ms1.getCountry());
+        System.out.println("Регион: "+ms1.getRegion());
+        System.out.println("Город: "+ms1.getCity());
+        System.out.println("Улица: "+ms1.getStreet());
+        System.out.println("Дом: "+ms1.getHouse());
+        System.out.println("Корпус: "+ms1.getKorpus());
+        System.out.println("Квартира: "+ms1.getKvartira());
+/////////////////////////////////////////////////////////////////////
+        o=0;
+        String s;
+        s = "Russia,Udmurtia,Izhevsk,Shkolnaia,40,netu,134";
+        StringTokenizer st = new StringTokenizer(s, ";,.");
+        while (st.hasMoreTokens())
+        {
+            if(o==0)ms1.Country=st.nextToken();
+            if(o==1)ms1.Region=st.nextToken();
+            if(o==2)ms1.City=st.nextToken();
+            if(o==3)ms1.Street=st.nextToken();
+            if(o==4)ms1.House=st.nextToken();
+            if(o==5)ms1.Korpus=st.nextToken();
+            if(o==6)ms1.Kvartira=st.nextToken();
+            o++;
+        }
+        System.out.println("Страна: "+ms1.getCountry());
+        System.out.println("Регион: "+ms1.getRegion());
+        System.out.println("Город: "+ms1.getCity());
+        System.out.println("Улица: "+ms1.getStreet());
+        System.out.println("Дом: "+ms1.getHouse());
+        System.out.println("Корпус: "+ms1.getKorpus());
+        System.out.println("Квартира: "+ms1.getKvartira());
+
+    }
+}
