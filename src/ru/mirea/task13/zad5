@@ -1,0 +1,31 @@
+package Rabota13;
+import java.util.Scanner;
+public class zad5
+{
+    public static void main(String[] args)
+    {
+        String str;
+        char c0;
+        Scanner in = new Scanner(System.in);
+        str=in.nextLine();
+        c0=str.charAt(0);
+        if(c0=='+')
+        {
+        System.out.println("Код страны: "+str.substring(0,str.length()-10));
+            System.out.println("Три цифры: "+str.substring(str.length()-10,str.length()-7));
+            System.out.println("Первые четыре цифры: "+str.substring(str.length()-7,str.length()-4));
+            System.out.println("Вторые четыре цифры: "+str.substring(str.length()-4,str.length()));
+System.out.println(str.substring(0,str.length()-10)+str.substring(str.length()-10,str.length()-7)+"-"+str.substring(str.length()-7,str.length()-4)+"-"+str.substring(str.length()-4,str.length()));
+        }
+        else
+        {
+            System.out.println("Код страны: "+str.substring(0,str.length()-10));
+            System.out.println("Три цифры: "+str.substring(str.length()-10,str.length()-7));
+            System.out.println("Первые четыре цифры: "+str.substring(str.length()-7,str.length()-4));
+            System.out.println("Вторые четыре цифры: "+str.substring(str.length()-4,str.length()));
+System.out.println("+"+str.substring(0,str.length()-10)+str.substring(str.length()-10,str.length()-7)+"-"+str.substring(str.length()-7,str.length()-4)+"-"+str.substring(str.length()-4,str.length()));
+        }
+        }
+    }
+    //89175655655
+//+104289652211
