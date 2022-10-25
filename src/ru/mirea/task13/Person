@@ -1,0 +1,40 @@
+package Rabota13;
+import java.util.Scanner;
+public class Person
+{
+    public String Surename;
+    public String Name;
+    public String Otchestvo;
+    public String getSurename() {
+        return Surename;
+    }
+    public void setSurename(String surename) {
+        Surename = surename;
+    }
+    public String getName() {
+        if(Name!=null)return Name;
+        else return "";
+    }
+    public void setName(String name) {
+        Name = name;
+    }
+    public String getOtchestvo() {
+        if(Otchestvo!=null)return Otchestvo;
+        else return "";
+    }
+    public void setOtchestvo(String otchestvo) {
+        Otchestvo = otchestvo;
+    }
+    public static void main(String[] args)
+    {
+        Person ms1=new Person();
+        Scanner in = new Scanner(System.in);
+        ms1.Name=in.nextLine();
+        ms1.Surename=in.nextLine();
+        ms1.Otchestvo=in.nextLine();
+        System.out.println(ms1.getName());
+        System.out.println(ms1.getSurename());
+        System.out.println(ms1.getOtchestvo());
+    }
+}
+
